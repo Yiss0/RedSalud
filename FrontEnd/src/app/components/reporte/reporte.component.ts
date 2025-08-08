@@ -105,7 +105,8 @@ export class ReporteOcupacionComponent implements OnInit {
     }));
     // Opcional: Ordenar por número de piso
     this.floorOccupations.sort((a, b) => a.floor - b.floor);
-
+    console.log("Specialty Occupations:", this.specialtyOccupations);
+    console.log("Floor Occupations:", this.floorOccupations)
     // --- Otras métricas que podrías añadir ---
     // Ej: Ocupación por día de la semana, por hora, etc.
     // Ej: Número de profesionales distintos que han reservado
